@@ -1,14 +1,14 @@
 set global local_infile=1;
 
 use portfolioproject;
-load data local infile 'C:/Users/user/Desktop/BUSINESS ANALYTICS/PROJECTS/Alex Freeberg/CovidDeaths.csv' into table coviddeaths FIELDS terminated by ',' lines terminated by '\n'
+load data local infile 'C:/Users/user..../CovidDeaths.csv' into table coviddeaths FIELDS terminated by ',' lines terminated by '\n'
 ignore 1 lines;
 select * 
 from portfolioproject.coviddeaths
 where continent is not null;
 
 use portfolioproject;
-load data local infile 'C:/Users/user/Desktop/BUSINESS ANALYTICS/PROJECTS/Alex Freeberg/CovidVaccinations.csv' into table covidvaccinations FIELDS terminated by ',' lines terminated by '\n'
+load data local infile 'C:/Users/user..../CovidVaccinations.csv' into table covidvaccinations FIELDS terminated by ',' lines terminated by '\n'
 ignore 1 lines;
 select * from portfolioproject.covidvaccinations;
 
